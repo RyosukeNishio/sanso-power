@@ -1,0 +1,9 @@
+.DS_Store
+/assets/.DS_Store
+/assets/resources/.DS_Store
+/.vscode
+/assets/.sass-cache
+.sass-cache
+/node_modules
+/package-lock.json
+node_modules
