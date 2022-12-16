@@ -83,16 +83,15 @@ img {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 20px 30px;
   justify-items: center;
 }
 .nav .usage_nav li {
-  padding: 15px 0;
   width: 100%;
   background: #fff;
 }
 .nav .usage_nav li a {
-  padding-left: 20px;
+  padding: 10px 0 10px 15px;
   position: relative;
   display: block;
   font-size: 18px;
@@ -103,12 +102,22 @@ img {
   content: "";
   width: 10px;
   height: 10px;
-  top: 6px;
+  top: 16px;
   right: 15px;
   border-top: 4px solid;
   border-right: 4px solid;
   transform: rotate(45deg);
   border-radius: 3px;
+}
+.nav .usage_nav li a:hover {
+  transition: 0.3s;
+  color: #fff;
+}
+.nav .usage_nav li:hover {
+  margin-left: 15px;
+  transition: 0.3s;
+  background: #eb739a;
+  color: #fff;
 }
 
 .campaign {
@@ -159,6 +168,7 @@ img {
   padding: 5px 25px;
   display: inline-block;
   background: #6cbaff;
+  box-shadow: 5px 5px 0 #005eb2;
   color: #fff;
 }
 .approach_news ul {
@@ -179,6 +189,7 @@ img {
   padding: 5px 25px;
   display: inline-block;
   background: #eb739a;
+  box-shadow: 5px 5px 0 #c2003d;
   color: #fff;
 }
 .approach_voice ul {
@@ -202,6 +213,9 @@ img {
 .wpsbc-container thead tr th:nth-child(7) {
   color: #ee4444;
 }
+.wpsbc-container tbody {
+  background: #fff;
+}
 .wpsbc-container select {
   display: none;
 }
@@ -223,34 +237,46 @@ img {
   font-weight: bold;
 }
 
+.common_sec {
+  margin-top: 100px;
+}
+
 .footer_link {
+  margin: 60px auto 0;
+  padding: 30px 50px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  width: 75%;
   justify-items: center;
+  border: 13px double #f5c3d3;
 }
-.footer_link h2 {
+.footer_link h3 {
   position: relative;
   font-size: 16px;
   font-weight: bold;
 }
-.footer_link h2::before {
+.footer_link h3::before {
   position: absolute;
   content: "■";
   left: -20px;
   color: #eb739a;
 }
 .footer_list li {
-  padding-left: 15px;
+  margin-top: 5px;
+  padding-left: 3px;
   position: relative;
   font-size: 12px;
 }
 .footer_list li::before {
   position: absolute;
   content: "●";
-  left: 2px;
+  left: -10px;
   top: 2px;
   font-size: 10px;
+  color: #eb739a;
+}
+.footer_list li a:hover {
   color: #eb739a;
 }
 .footer_list_inner li {
@@ -264,4 +290,102 @@ img {
   top: 0;
   font-size: 12px;
   color: #eb739a;
+}
+.footer_list_inner li:last-child::before {
+  position: absolute;
+  content: "└";
+  left: 0px;
+  top: 0;
+  font-size: 12px;
+  color: #eb739a;
+}
+.footer .order_sec {
+  margin-top: 30px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  background: #fff2f6;
+}
+.footer .order_sec h3 {
+  padding: 5px 30px;
+  box-shadow: 5px 5px 0;
+  font-size: 14px;
+  background: white;
+  border: 2px solid;
+  text-align: center;
+}
+.footer .order_sec_list {
+  margin-top: 20px;
+}
+.footer .order_sec_list li {
+  margin-top: 15px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+}
+.footer .order_sec_list li::before {
+  position: absolute;
+  content: "■";
+  color: #eb739a;
+  left: 8px;
+}
+.footer .order_sec_list .tel_icon {
+  margin-right: 5px;
+  width: 25px;
+}
+.footer .order_sec_list_tel {
+  margin-top: 5px;
+  display: flex;
+  font-size: 23px;
+  align-items: center;
+  color: #eb739a;
+  font-family: monospace;
+}
+.footer .order_sec_list_inner {
+  margin-top: 10px;
+}
+.footer .order_sec_list_inner li {
+  margin-top: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #eb739a;
+}
+.footer .order_sec_list_inner li::before {
+  content: "";
+  font-size: 12px;
+}
+.footer .order_sec_link {
+  color: #005eb2;
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer .order_sec .shop_dl {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+}
+
+.post {
+  border: 3px solid #72AF2C;
+  color: #72AF2C;
+}
+.post_list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: flex-start;
+  justify-items: center;
+}
+.post_list dt {
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #fff;
+}
+.post_list .post_pink {
+  border: 3px solid #eb739a;
+  color: #eb739a;
+}
+.post_list .post_green {
+  border: 3px solid #72AF2C;
+  color: #72AF2C;
 }/*# sourceMappingURL=style.css.map */

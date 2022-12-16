@@ -5,9 +5,12 @@
 
 $pink :#f5c3d3;
 $hardpink: #eb739a;
+$hardblue: #005eb2;
 $white: #fff;
 $black: #000;
 $lightblue: #e3f2ff;
+$lightpink: #fff2f6;
+$green: #72AF2C;
 
 html {
   touch-action: manipulation;
@@ -103,14 +106,13 @@ $spsize: 767px;
       margin-top: 20px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 20px 30px;
       justify-items: center;
       li{
-        padding: 15px 0;
         width: 100%;
         background: $white;
         a{
-          padding-left: 20px;
+          padding: 10px 0 10px 15px;
           position: relative;
           display: block;
           font-size: 18px;
@@ -120,13 +122,23 @@ $spsize: 767px;
             content: "";
             width: 10px;
             height: 10px;
-            top: 6px;
+            top: 16px;
             right: 15px;
             border-top: 4px solid;
             border-right: 4px solid;
             transform: rotate(45deg);
             border-radius: 3px;
           }
+          &:hover{
+            transition: 0.3s;
+            color: $white;
+          }
+        }
+        &:hover{
+          margin-left: 15px;
+          transition: 0.3s;
+          background: $hardpink;
+          color: $white;
         }
       }
     }
@@ -183,6 +195,7 @@ $spsize: 767px;
       padding: 5px 25px;
       display: inline-block;
       background: #6cbaff;
+      box-shadow: 5px 5px 0 $hardblue;
       color: $white;
     }
     ul{
@@ -203,6 +216,7 @@ $spsize: 767px;
       padding: 5px 25px;
       display: inline-block;
       background: #eb739a;
+      box-shadow: 5px 5px 0 #c2003d;
       color: $white;
     }
     ul{
@@ -233,6 +247,9 @@ $spsize: 767px;
       }
     }
   }
+  tbody{
+    background: $white;
+  }
   select{
     display: none;
   }
@@ -255,13 +272,23 @@ $spsize: 767px;
   }
 }
 
+.common{
+  &_sec{
+    margin-top: 100px;
+  }
+}
+
 .footer{
   &_link{
+    margin: 60px auto 0;
+    padding: 30px 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    width: 75%;
     justify-items: center;
-    h2{
+    border: 13px double $pink;
+    h3{
       position: relative;
       font-size: 16px;
       font-weight: bold;
@@ -275,16 +302,20 @@ $spsize: 767px;
   }
   &_list{
     li{
-      padding-left: 15px;
+      margin-top: 5px;
+      padding-left: 3px;
       position: relative;
       font-size: 12px;
       &::before{
         position: absolute;
         content: '●';
-        left: 2px;
+        left: -10px;
         top: 2px;
         font-size: 10px;
         color: #eb739a;
+      }
+      a:hover{
+        color: $hardpink;
       }
     }
     &_inner{
@@ -299,7 +330,107 @@ $spsize: 767px;
           font-size: 12px;
           color: $hardpink;
         }
+        &:last-child::before{
+          position: absolute;
+          content: '└';
+          left: 0px;
+          top: 0;
+          font-size: 12px;
+          color: $hardpink;
+        }
       }
     }
   }
+  .order{
+    &_sec{
+      margin-top: 30px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      background: $lightpink;
+      h3{
+        padding: 5px 30px;
+        box-shadow: 5px 5px 0;
+        font-size: 14px;
+        background: white;
+        border: 2px solid;
+        text-align: center;
+      }
+      &_list{
+        margin-top: 20px;
+        li{
+          margin-top: 15px;
+          padding-left: 25px;
+          position: relative;
+          font-size: 14px;
+          &::before{
+            position: absolute;
+            content: '■';
+            color: $hardpink;
+            left: 8px;
+          }
+        }
+        .tel_icon{
+          margin-right: 5px;
+          width: 25px;
+        }
+        &_tel{
+          margin-top: 5px;
+          display: flex;
+          font-size: 23px;
+          align-items: center;
+          color: $hardpink;
+          font-family: monospace;
+        }
+        &_inner{
+          margin-top: 10px;
+          li{
+            margin-top: 5px;
+            padding-left: 5px;
+            border-bottom: 1px solid $hardpink;
+            &::before{
+              content: '';
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      &_link{
+        color: $hardblue;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .shop_dl{
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+      }
+    }
+  }
+}
+
+.post{
+  &_list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: flex-start;
+    justify-items: center;
+    dt{
+      padding: 3px 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      background: $white;
+    }
+    .post_pink{
+      border: 3px solid $hardpink;
+      color: $hardpink;
+    }
+    .post_green{
+      border: 3px solid $green;
+      color: $green;
+    }
+  }
+  border: 3px solid $green;
+  color: $green;
 }

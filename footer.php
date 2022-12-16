@@ -1,7 +1,7 @@
 <footer class="footer">
   <article class="footer_link">
     <div>
-      <h2>酸素系エコ洗剤について</h2>
+      <h3>酸素系エコ洗剤について</h3>
       <ul class="footer_list">
         <li><a href="../hanako_jiten/index.html">酸素系エコ洗剤「かわゆい花子」って何？</a></li>
         <li><a href="../hanako_jiten/hanako_hiwa.html">「かわゆい花子」誕生秘話</a></li>
@@ -12,12 +12,12 @@
         <li><a href="../koe/index.html">各業種でお役立ち</a></li>
         <li><a href="../joho/index.html">酸素系エコ洗剤商品一覧</a></li>
         <li><a href="http://sansoriki.jp/hanako/hanako/index.html" target="_blank">酸素系エコ洗剤ご購入</a></li>
-        <li><a href="../syohin/ecopre.html">酸素系エコ洗剤<br>;エコプレミアム選定！</a></li>
+        <li><a href="../syohin/ecopre.html">酸素系エコ洗剤 エコプレミアム選定！</a></li>
       </ul>
     </div>
 
     <div>
-      <h2>酸素系エコ洗剤使用例（1）</h2>
+      <h3>酸素系エコ洗剤使用例（1）</h3>
       <ul class="footer_list">
         <li><a href="../abura/index.html">油汚れ</a>
           <ul class="footer_list_inner">
@@ -41,7 +41,7 @@
     </div>
 
     <div>
-      <h2>酸素系エコ洗剤使用例（2）</h2>
+      <h3>酸素系エコ洗剤使用例（2）</h3>
       <ul class="footer_list">
         <li><a href="../souji/index.html">普段のお掃除</a>
           <ul class="footer_list_inner">
@@ -65,7 +65,7 @@
     </div>
 
     <div>
-      <h2>酸素系エコ洗剤使用例（3）</h2>
+      <h3>酸素系エコ洗剤使用例（3）</h3>
       <ul class="footer_list">
         <li><a href="../sentaku/index.html">お洗濯</a>
           <ul class="footer_list_inner">
@@ -80,17 +80,19 @@
             <li><a href="../sentaku/sentakumono_namagawaki.html">洗濯物の臭い対策</a></li>
             <li><a href="../sentaku/kaigo.html">要介護者の洗濯物に</a></li>
           </ul>
-      
         </li>
-        <li><a href="../big/index.html">大物お洗濯</a></li>
-        <li><a href="../big/sheets.html">シーツ・ソファーカバー</a></li>
-        <li><a href="../big/curtain.html">カーテン・レースカーテン</a></li>
-        <li><a href="../big/boushi.html">帽子</a></li>
+        <li><a href="../big/index.html">大物お洗濯</a>
+          <ul class="footer_list_inner">
+            <li><a href="../big/sheets.html">シーツ・ソファーカバー</a></li>
+            <li><a href="../big/curtain.html">カーテン・レースカーテン</a></li>
+            <li><a href="../big/boushi.html">帽子</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
 
     <div>
-      <h2>ご案内</h2>
+      <h3>ご案内</h3>
       <ul class="footer_list">
         <li><a href="../">このサイトのＨＯＭＥへ</a></li>
         <li><a href="../joho/gotyuumon.html">ご注文に関しまして</a></li>
@@ -100,13 +102,86 @@
         <li><a href="../joho/media.html">お掃除メディア情報</a></li>
         <li><a href="../joho/kakeizu.html">タイシン秘密の家系図</a></li>
         <li><a href="../joho/link.html">リンク集</a></li>
-        <li><a href="../joho/qanda.html">・よくあるＱ ＆ Ａ</a></li>
+        <li><a href="../joho/qanda.html">よくあるＱ ＆ Ａ</a></li>
         <li><a href="../form/otoiawase.html">お問い合わせフォーム</a></li>
       </ul>
     </div>
   </article>
 
-  <?php echo do_shortcode('[sbc title="no"]'); ?>
+  <section class="order_sec">
+      <div>
+        <h3>ご注文方法</h3>
+        <ul class="order_sec_list">
+          <li>
+            ネットからのご注文<br>
+            <a href="" class="order_sec_link">&rArr; 商品ページへ</a>
+          </li>
+          <li>
+            お電話でのご注文<br><a href="tel:0120132432" class="order_sec_list_tel"><img class="tel_icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tel_icon.png">  0120-132-432</a>
+            <ul class="order_sec_list_inner">
+              <li>
+                <dl class="shop_dl">
+                  <dt>営業時間</dt>
+                  <dd>9:00 - 17:00</dd>
+                </dl>       
+              </li>
+              <li>
+                <dl class="shop_dl">
+                  <dt>定休日</dt>
+                  <dd>土・日・祝祭日</dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <li>
+            FAXでのご注文<br><a style="pointer-events: none;" href="tel:0934711369" class="order_sec_list_tel"><img class="tel_icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/fax_icon.png">  093-471-1369</a>
+            <a href="" class="order_sec_link">&rArr; ご注文用FAX用紙</a>
+          </li>
+          <li>
+            代理店を通じてのご注文<br>
+            <a href="" class="order_sec_link">&rArr; お近くの代理店を問い合わせる</a>
+          </li>
+          <li>パンフレットを見る<br>
+          <a href="" class="order_sec_link">&rArr; 初めての方</a><br>
+          <a href="" class="order_sec_link">&rArr; かわゆい花子パンフレット</a>
+        </li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3>お支払い方法</h3>
+        <dl class="post_list">
+          <dt class="post_pink">代金<br>引換</dt>
+          <dd>
+            代引き手数料は無料です。<br>
+            ※お試しセットは代引きできません。<br>
+            ※領収書は代金お支払い時にヤマト運輸が発行します。
+          </dd>
+        </dl>
+
+        <dl class="post_list">
+          <dt class="post_green">郵便<br>振替</dt>
+          <dd>
+            手数料は無料です。<br>
+            商品と一緒に用紙が入っておりますので、<br>
+            期限までにお振り込みください。<br>
+            ※コンビニ支払い不可<br>
+            ※領収書はお支払い時の受領証になります。
+          </dd>
+        </dl>
+  
+        <h3>送料について</h3>
+        <p>
+
+        </p>
+      </div>
+  
+      <div>
+        <h3>配送について</h3>
+      </div>
+      <?php echo do_shortcode('[sbc title="no"]'); ?>
+  </section>
+
 </footer>
 
 </body>

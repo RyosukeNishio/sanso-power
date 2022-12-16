@@ -63,6 +63,12 @@
 
     <section class="max_1100 common_sec">
       <h2>かわゆい花子の汚れが落ちる秘密</h2>
+      <div>
+        <dl>
+          <dt></dt>
+          <dd></dd>
+        </dl>
+      </div>
     </section>
 
     <section class="recommend">
