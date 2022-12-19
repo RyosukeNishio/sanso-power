@@ -170,17 +170,62 @@
           </dd>
         </dl>
   
-        <h3>送料について</h3>
-        <p>
-
+        <h3 class="mt20">送料について</h3>
+        <ul class="mt20">
+          <li>
+            <dl class="delivery">
+              <dt>北海道・沖縄</dt>
+              <dd>1,980円</dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="delivery">
+              <dt>東北・関東・信越</dt>
+              <dd>880円</dd>
+            </dl>
+          </li>
+          <li>
+            <dl class="delivery">
+              <dt>上記以外</dt>
+              <dd>660円</dd>
+            </dl>
+          </li>
+        </ul>
+        <p class="delivery_text">
+          ※お試しセットは除く<br>
+          5,000円以上で送料無料！
         </p>
+
       </div>
   
       <div>
         <h3>配送について</h3>
+        <p class="mt20 pc_fs12">
+          ヤマト運輸（クロネコヤマト）でのお届けです。<br>
+          時間指定は下記の5種類から選べます。
+        </p>
+        <img class="delivery_img" src="<?php echo get_template_directory_uri(); ?>/assets/img/delivery_time.png">
+        <p class="delivery_text">
+          ※お試しセットはDM便のみになり時間指定はできません。<br>
+          ご了承ください。<br>
+          ※宅配ボックス希望の方は備考欄へ明記ください。<br>
+          置き配はお受けできません。
+        </p>
+
       </div>
-      <?php echo do_shortcode('[sbc title="no"]'); ?>
+
+      <div>
+      <h3>営業日カレンダー</h3>
+      <div class="mt20">
+        <p class="calendar_month">20<?php echo date('y'); ?>年<?php echo date('n'); ?>月　<span class="col_orange">■</span>は休業日です。</p>
+        <?php echo do_shortcode('[sbc title="no" pagination="2"]'); ?>
+      </div>
+    </div>
   </section>
+
+  <div class="footer_copylight">
+    <p>Copyright© 洗剤製造・発売元：有限会社タイシン九州 Web Since2007 All Rights Reserved.</p>
+  </div>
 
 </footer>
 
