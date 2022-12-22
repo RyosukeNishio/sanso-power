@@ -217,8 +217,11 @@
       <div>
       <h3>営業日カレンダー</h3>
       <div class="mt20">
-        <p class="calendar_month">20<?php echo date('y'); ?>年<?php echo date('n'); ?>月　<span class="col_orange">■</span>は休業日です。</p>
-        <?php echo do_shortcode('[sbc title="no" pagination="2"]'); ?>
+        <p class="calendar_month">
+          <span class="col_green">■</span>は休業日です。<br>
+          <span class="col_pink">■</span>は休業日です。<br>
+        </p>
+        <?php echo do_shortcode('[wpsbc id="1" title="no" legend_position="side" language="auto"]'); ?>
       </div>
     </div>
   </section>
@@ -229,5 +232,6 @@
 
 </footer>
 
+<?php wp_footer(); ?>
 </body>
 </html>

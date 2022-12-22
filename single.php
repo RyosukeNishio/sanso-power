@@ -35,14 +35,24 @@
 
     <?php elseif( get_row_layout() == 'single_sec_loop' ): ?>
     <!-- レイアウト名2にリピーターフィールドがあるかの判別 -->
+    <section class="single_step">
     <?php if( have_rows('loop_step') ): //リピーターフィールドの値を持っているかどうかをチェック ?>
     <?php while ( have_rows('loop_step') ) : the_row(); //値のループ ?>
-    <img src="<?php the_sub_field('single_step_img'); ?>">
-    <?php the_sub_field('single_step_ttl'); ?>
-    <?php the_sub_field('single_step_editor'); ?>
+    
+    <div class="single_step_box">
+      <img src="<?php the_sub_field('single_step_img'); ?>">
+      <dl>
+        <dt class="single_step_box_ttl"><?php the_sub_field('single_step_ttl'); ?></dt>
+        <dd class="single_step_box_text">
+          <?php the_sub_field('single_step_editor'); ?>
+        </dd>
+      </dl>
+    </div>
 
     <?php endwhile; ?>
     <?php endif; ?>
+
+    </section>
 
     <?php endif; ?>
     <?php endwhile; ?>

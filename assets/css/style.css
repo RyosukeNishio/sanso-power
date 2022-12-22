@@ -44,6 +44,14 @@ img {
   color: #ffb544;
 }
 
+.col_green {
+  color: #d1f3c1 !important;
+}
+
+.col_pink {
+  color: #fcd2df !important;
+}
+
 .top_header {
   width: 100%;
   height: 650px;
@@ -225,10 +233,32 @@ img {
 .single_main .blog-detail__title {
   margin-bottom: 40px;
   padding: 10px 20px;
-  font-size: 38px;
+  font-size: 32px;
   background: #fff2f6;
   border-left: 20px solid #eb739a;
 }
+.single_step {
+  margin-top: 60px;
+}
+.single_step_box {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 15px;
+}
+.single_step_box_ttl {
+  padding: 10px;
+  font-size: 16px;
+  background: #e3f2ff;
+  border: 4px solid #005eb2;
+  border-left: 10px solid #005eb2;
+  border-radius: 3px;
+}
+.single_step_box_text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 .side {
   background: #e3f2ff;
 }
@@ -256,15 +286,32 @@ img {
   border: 1px solid;
 }
 .wpsbc-container .wpsbc-legend-item-2 {
-  background: #ffb544;
   color: red;
-  border: 1px solid #fe6400;
-}
-.wpsbc-container .wpsbc-date-inner {
-  padding: 5px;
+  border: 1px solid #eb739a;
 }
 .wpsbc-container .wpsbc-date-number {
   font-weight: bold;
+}
+
+.wpsbc-container.wpsbc-calendar-1 .wpsbc-legend-item-icon-2 div:first-of-type {
+  background-color: #fcd2df !important;
+}
+
+.wpsbc-container.wpsbc-calendar-1 .wpsbc-legend-item-icon-1 div:first-of-type {
+  background-color: #d1f3c1 !important;
+}
+
+.wpsbc-container select {
+  display: block !important;
+}
+
+.calendar_month {
+  margin-bottom: 10px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 12px;
+  background: white;
+  border: 2xxpx solid;
 }
 
 .common_sec {
@@ -449,6 +496,16 @@ img {
   font-size: 12px;
 }
 
-.calendar_month {
-  font-size: 12px;
+.user_voice {
+  margin: 80px auto;
+  width: 1000px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 0.3fr;
+}
+.user_voice_sec_box {
+  margin: 80px auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 0.7fr 1fr;
 }/*# sourceMappingURL=style.css.map */
